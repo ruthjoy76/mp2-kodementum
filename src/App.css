@@ -1,0 +1,30 @@
+@import-normalize;
+
+.App {
+  background: url(/src/assets/Mp2\ Background.svg);
+  background-size: cover;
+  width: 100%;
+  min-height: 100dvh;
+  color: rgb(255, 255, 255);
+}
+
+.clock .time, .date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 2em;
+}
+
+.time  {
+  font-size: 4.5rem;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+
+.date {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0;
+  margin-top: 0;
+}

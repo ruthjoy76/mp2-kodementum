@@ -1,0 +1,26 @@
+@import-normalize;
+
+.weather-container .weathers, .city-name {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  text-align: end;
+  padding-top: 5.5em;
+  padding-right: 2em;
+}
+
+img {
+  position: absolute;
+  padding-bottom: .5em;
+}
+.weathers  {
+  font-size: .75rem;
+  padding-top:1.2em; 
+}
+
+.city-name {
+  color: aquamarine;
+  font-size: 0.95rem;
+  padding-top: .25em;
+  margin-top: .5em; 
+}

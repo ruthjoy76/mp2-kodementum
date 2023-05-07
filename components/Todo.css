@@ -1,0 +1,9 @@
+@import-normalize;
+
+.todos .question, .form, li {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: .75em;
+  margin-top: .5em;
+}
