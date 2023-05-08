@@ -28,12 +28,15 @@ function Todo() {
         {todos.map((todo, id) => (
           <li key={id}>
             {todo}
-            <button onClick={() => handleTodoDelete(id)}>Delete</button>
+            <button onClick={() => handleTodoDelete(id)}>x</button>
           </li>
         ))}
       </ul>
+      
     </div>
   );
+
+  
 }
 
 export default Todo;

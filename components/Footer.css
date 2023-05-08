@@ -1,21 +1,20 @@
 @import-normalize;
 
-.footer .quote, .author {
-  position: sticky;
-  display: flex;
-  justify-content: center;
-  align-items: center;
- 
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  height: 80px;
+  text-align: center;
+  color: rgb(255, 255, 255);
 }
 
-.quote {
-  color: rgb(200, 251, 234);
-  font-size: 1.25rem;
-  margin-top: 10.5em;
+.quote { 
+  font-size: 1.1rem;
 }
 
-.author{
-  color: rgb(200, 251, 234);
+.author {
   font-size: 1rem;
-  margin-top: 0.5em;
 }
