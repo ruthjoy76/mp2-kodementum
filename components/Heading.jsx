@@ -25,11 +25,11 @@ function Heading() {
         setCondition("Morning");
       }
     
-      else if  (new Date().getHours() >= 12 && new Date().getHours() <= 18) {
+      else if  (new Date().getHours() >= 12 && new Date().getHours() <= 17) {
         setCondition("Afternoon");
       }
     
-      else if (new Date().getHours() > 18 && new Date().getHours() <= 24) {
+      else if (new Date().getHours() > 17 && new Date().getHours() <= 24) {
         setCondition("Evening");
       }
       

@@ -3,26 +3,37 @@
 .App {
   width: 100%;
   min-height: 100dvh;
-  color: rgb(255, 255, 255);
+  background-size: cover;
+  background-position: center ;
+
 }
 
-.clock .time, .date {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-top: 2em;
+
+
+
+
+
+
+/* styles for screens smaller than 600px */
+@media only screen and (max-width: 600px) {
+  /* add styles here */
+  body {
+    font-size: 14px;
+  }
 }
 
-.time  {
-  font-size: 4.5rem;
-  font-weight: 900;
-  margin-bottom: 0;
+/* styles for screens between 600px and 900px */
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  /* add styles here */
+  body {
+    font-size: 16px;
+  }
 }
 
-.date {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 0;
-  margin-top: 0;
+/* styles for screens larger than 900px */
+@media only screen and (min-width: 900px) {
+  /* add styles here */
+  body {
+    font-size: 18px;
+  }
 }

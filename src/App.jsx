@@ -1,33 +1,47 @@
 import "./App.css";
 import { useState, useEffect } from "react";
-import moment from "moment";
+
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Todo from "../components/Todo";
 import Heading from "../components/Heading";
+import Clock from "../components/Clock";
 
 
 function App() {
-  const [time, setTime] = useState("");
-
-  useEffect(() => {
-    setInterval(() => {
-     
-      setTime(moment().format("hh:mm:ss A"));
-    }, 1000);
-  });
+    const [image, setImage] = useState(null);
+  
+    useEffect(() => {
+      
+      fetch('https://api.pexels.com/v1/search?query=nature=landscape', {
+        headers: {
+          Authorization: 'GM9fkJXrFqUYrMiORTKFaLe0Bl5qmXMZuNCIVN5wsntcDhvuzAsk0Csf',
+        },
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          const index = Math.floor(Math.random() * data.photos.length);
+          setImage(data.photos[index].src.landscape);
+        })
+        .catch((error) => console.log(error));    
+    }, []);
+  
 
   return (
-    <div className="App">
+    <div className="App" style={{
+      backgroundImage: image ? `url(${image})` : null,
+    }}>
+  
       <Navbar />
-      <div className="clock">
-        <h1 className="time">{time}</h1>
-        <h2 className="date">{moment().format("dddd, MMMM D YYYY")}</h2>
-      </div>
-
+      <Clock />
       <Heading />
       <Todo />
       <Footer />
+      
+     
+      
+      
+     
     </div>
   );
 }
