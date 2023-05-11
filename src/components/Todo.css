@@ -1,0 +1,28 @@
+@import-normalize;
+
+.todos .question, .form, li {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: .75em;
+  margin-top: .5em;
+}
+
+button {
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-left: .5em;
+  border: transparent;
+ 
+  background-color: transparent;
+  cursor: pointer;
+}
+
+input {
+  border: 1px solid rgba(238, 243, 242, 0.522);
+  border-radius: .5em;
+  background-color: transparent;
+  padding: .25em;
+  margin-right: .5em;
+}
