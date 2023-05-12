@@ -1,6 +1,7 @@
 import "./Navbar.css";
 import { useState, useEffect } from "react";
 
+
 function Navbar() {
   
   
@@ -26,7 +27,7 @@ function Navbar() {
     let intervalId = setTimeout(fetchData, 360000);
 
     async function fetchData() {
-      //update weather every 1 hour
+    
       await fetch(url)
         .then((response) => response.json())
         .then((data) => {
@@ -48,13 +49,18 @@ function Navbar() {
     };
   }, [url]);
 
+
+  
   return (
-    <div className="weather-container">
+    
+    <div className="navbar">
+    <div className="weatherContainer">
       <div className="weathers">
-      <img src={icon} alt="weather" /> 
-      {weather.main ? <h1>{weather.main.temp} &#176;C</h1> : <h1>Loading</h1>}
+      <img src={icon} alt="weather" className="weatherIcon"/> 
+      {weather.main ? <h1 className="temp">{Math.round(weather.main.temp)}&deg;C</h1> : <h1>Loading</h1>}
       </div> 
-      <h2 className="city-name">{weather.name}</h2>  
+      <h2 className="weatherName">{weather.name}</h2>  
+    </div>
     </div>
   );
 }

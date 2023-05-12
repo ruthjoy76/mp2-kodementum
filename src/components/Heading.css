@@ -6,6 +6,7 @@
   text-align: center;
   padding-top: .75em;
   margin-top: .5em;
+  text-shadow: 2px 2px 20px rgb(0, 0, 0);
 }
 
 .greetings {

@@ -9,6 +9,7 @@
   height: 80px;
   text-align: center;
   color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 20px rgb(0, 0, 0);
 }
 
 .quote { 
