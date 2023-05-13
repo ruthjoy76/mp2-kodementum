@@ -1,10 +1,13 @@
 import "./Logo.css";
+import kodeLogo from "../images/logo.svg";
+
 function Logo() {
   
-  const logo ='./src/assets/images/Logo.svg'
+  
   return (
     <div>
-       <img src={logo} alt="Logo" className="logos" />
+      
+       <img src={kodeLogo} alt="Logo" className="logos" />
     </div>
   )
 }

@@ -9,10 +9,6 @@ import Clock from "./components/Clock";
 import Logo from "./components/Logo";
 
 
-
-
-
-
 function App() {
     const [image, setImage] = useState(null);
   
@@ -42,11 +38,6 @@ function App() {
       <Heading />
       <Todo />
       <Footer />
-      
-     
-      
-      
-     
     </div>
   );
 }

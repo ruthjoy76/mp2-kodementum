@@ -13,9 +13,60 @@
 }
 
 .quote { 
-  font-size: 1.1rem;
+  font-size: .75rem;
 }
 
 .author {
-  font-size: 1rem;
+  font-size: .5rem;
+  padding-top: .2em;
 }
+
+
+@media screen and (min-width: 601px) and (max-width: 960px) {
+  
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    height: 80px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 20px rgb(0, 0, 0);
+  }
+  
+  .quote { 
+    font-size: 1.1rem;
+  }
+  
+  .author {
+    font-size: 1rem;
+  }
+
+}
+
+@media screen and (min-width: 961px) {
+  
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    height: 80px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 20px rgb(0, 0, 0);
+  }
+  
+  .quote { 
+    font-size: 1.1rem;
+  }
+  
+  .author {
+    font-size: 1rem;
+  }
+
+}
+

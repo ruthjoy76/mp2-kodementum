@@ -11,5 +11,41 @@
 
 .greetings {
   color: rgb(200, 251, 234);
-  font-size: 4rem;
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 601px) and (max-width: 960px) {
+  
+  .message {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: .75em;
+    margin-top: .5em;
+    text-shadow: 2px 2px 20px rgb(0, 0, 0);
+  }
+  
+  .greetings {
+    color: rgb(200, 251, 234);
+    font-size: 4rem;
+  }
+
+}
+
+@media screen and (min-width: 961px) {
+  
+  .message {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: .75em;
+    margin-top: .5em;
+    text-shadow: 2px 2px 20px rgb(0, 0, 0);
+  }
+  
+  .greetings {
+    color: rgb(200, 251, 234);
+    font-size: 4rem;
+  }
+
 }

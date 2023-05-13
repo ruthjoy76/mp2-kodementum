@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 function Heading() {
   const getName = localStorage.getItem("name")
     ? localStorage.getItem('name')
-    : "Click to add name";
+    : "________";
 
   const [name, setName] = useState(getName);
   const [condition, setCondition] = useState("");
