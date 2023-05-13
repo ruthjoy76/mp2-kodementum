@@ -1,6 +1,7 @@
 @import-normalize;
 
-.weatherContainer, .weathers, .weatherName{
+.navbar, .weathers, .weatherName{
+  position: relative;
   display: flex;
   align-items: center;
   margin-left: auto;
@@ -8,7 +9,6 @@
   padding: 0px 10px;
   text-shadow: 2px 2px 20px rgb(0, 0, 0);
 }
-
 
 .weatherIcon {
   width: 50px;
@@ -23,7 +23,7 @@
   align-items: center;
   margin-right: 1em;
   flex-direction: row;
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 .temp {

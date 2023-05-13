@@ -1,12 +1,15 @@
 import "./App.css";
 import { useState, useEffect } from "react";
 
-import Navbar from "./components/Navbar";
+import Weather from "./components/Weather";
 import Footer from "./components/Footer";
 import Todo from "./components/Todo";
 import Heading from "./components/Heading";
 import Clock from "./components/Clock";
-import SearchBar from "./components/SearchBar";
+import Logo from "./components/Logo";
+
+
+
 
 
 
@@ -15,7 +18,7 @@ function App() {
   
     useEffect(() => {
       
-      fetch('https://api.pexels.com/v1/search?query=mountains&per_page=15', {
+      fetch('https://api.pexels.com/v1/search?query=nature&per_page=15', {
         headers: {
           Authorization: 'GM9fkJXrFqUYrMiORTKFaLe0Bl5qmXMZuNCIVN5wsntcDhvuzAsk0Csf',
         },
@@ -33,8 +36,8 @@ function App() {
     <div className="App" style={{
       backgroundImage: image ? `url(${image})` : null,
     }}>
-      <SearchBar />
-      <Navbar />
+      <Logo />
+      <Weather />
       <Clock />
       <Heading />
       <Todo />

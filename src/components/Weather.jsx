@@ -1,8 +1,8 @@
-import "./Navbar.css";
+import "./Weather.css";
 import { useState, useEffect } from "react";
 
 
-function Navbar() {
+function Weather() {
   
   
   const [weather, setWeather] = useState([]);
@@ -50,19 +50,17 @@ function Navbar() {
   }, [url]);
 
 
-  
+
   return (
     
-    <div className="navbar">
-    <div className="weatherContainer">
+    <div className="navbar">  
       <div className="weathers">
       <img src={icon} alt="weather" className="weatherIcon"/> 
       {weather.main ? <h1 className="temp">{Math.round(weather.main.temp)}&deg;C</h1> : <h1>Loading</h1>}
       </div> 
       <h2 className="weatherName">{weather.name}</h2>  
     </div>
-    </div>
   );
 }
 
-export default Navbar;
+export default Weather;
