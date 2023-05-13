@@ -1,5 +1,6 @@
 {
   "name": "react-mp2",
+  "homepage": "https://ruthjoy76.github.io/mp2-kodementum/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,6 +9,8 @@
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
+    "predeploy": "npm run build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
